@@ -13,7 +13,9 @@ def main() -> int:
 
     meta_mod = Mod('snid_sage_modder.meta_mod')
 
+    MOD_FOLDER.mkdir(exist_ok=True)
     sys.path.append(str(MOD_FOLDER.resolve()))
+    
     for file in MOD_FOLDER.iterdir():
         if (file.is_file() and file.suffix == '.py') or (not file.is_file() and (file/'__init__.py').exists()):
             mods.append(Mod(file.stem))
