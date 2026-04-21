@@ -1,0 +1,19 @@
+[project]
+name = "snid-sage-modder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Marckie", email = "mkzeender@proton.me" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "snid-sage>=1.2.2",
+]
+
+[project.scripts]
+snid-sage-modder = "snid_sage_modder:main"
+
+[build-system]
+requires = ["uv_build>=0.9.1,<0.10.0"]
+build-backend = "uv_build"
