@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Marckie", email = "mkzeender@proton.me" }
 ]
-requires-python = "==3.11.*"
+requires-python = ">=3.11"
 dependencies = [
     "snid-sage>=1.2.2",
 ]
